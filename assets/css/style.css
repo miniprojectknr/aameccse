@@ -1413,7 +1413,7 @@ Header Style 3
 }
 
 /* ================
- BAnner
+ Banner
 ================*/
 .content-padding {
   padding: 100px 0px;
@@ -1424,7 +1424,7 @@ Header Style 3
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
-  background: #F4F9FF;
+  background-color: #faf9f9;
 }
 
 .banner .banner-content h1 {
@@ -1433,7 +1433,6 @@ Header Style 3
   letter-spacing: -1.3px;
   margin: 15px 0px 15px;
 }
-
 .banner .banner-content p {
   font-size: 18px;
   line-height: 34px;
@@ -1731,6 +1730,10 @@ Feature intro
 
 .feature-item .feature-text {
   overflow: hidden;
+}
+.feature-item .feature-text h4 {
+  color: #000000;
+  margin-top: 10px;
 }
 
 .feature-item .feature-text h4 {
