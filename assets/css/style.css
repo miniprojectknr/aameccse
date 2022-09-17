@@ -29,7 +29,7 @@ Version      : 1.0
   --theme-heading-color: #14133b;
   --theme-text-color: #77838F;
   --theme-white-color: #fff;
-  --theme-border-color: #ddd;
+  --theme-border-color: rgb(188, 252, 241);
 }
 
 body, html {
@@ -54,10 +54,11 @@ body {
   line-height: 30px;
   margin: 0;
   text-align: left;
-  background-color: #fff;
+  /* background:url("../images/bg/bg-svg.svg"); */
   font-weight: 400;
   color: var(--theme-text-color);
 }
+
 
 p {
   color: var(--theme-text-color);
@@ -735,7 +736,7 @@ Main Menu header
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgb(255, 255, 255);
   padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -996,7 +997,7 @@ Menu center bottom
 Menu top
 ---------------------*/
 .bg-color1 {
-  background: #F7EEE9;
+  background: #2c1d47bb;
 }
 
 .menu-top {
@@ -1029,6 +1030,10 @@ Menu top
 
 .header-contact a {
   color: #fff;
+}
+
+.content-color{
+  color:var(--theme-white-color);
 }
 
 .header-cart a {
@@ -1175,7 +1180,10 @@ Menu top
 .border-left-0 {
   border-left: 0px;
 }
-
+.menu-color{
+  background-color: #330033 !important;
+  box-shadow: 0px 16px 32px 0px rgba(54, 59, 95, 0.363) !important;
+}
 /*---------------------
 Header Style 3
 -----------------------*/
@@ -1419,13 +1427,19 @@ Header Style 3
 .content-padding {
   padding: 100px 0px;
 }
+.heading-color-white h1{
+  color:var(--theme-border-color);
+}
+
+.heading-color-white {
+  color:var(--theme-border-color);
+}
 
 .banner {
   padding: 80px 0px 120px;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
-  background-color: #faf9f9;
 }
 
 .banner .banner-content h1 {
@@ -3541,6 +3555,9 @@ Content tab
   background: #F8F9F8;
   border-bottom: 2px solid var(--theme-primary-color);
 }
+.nav-color a:link{
+  color:var(--theme-white-color);
+}
 
 /*==========================
 Course Topics
@@ -4446,7 +4463,8 @@ Footer Section
 .footer {
   padding: 100px 0px 20px;
   position: relative;
-  background: #000000;
+  border: radius 2px !important ;
+  background:rgb(27, 28, 32, 0.6) !important;
 }
 
 .footer .footer-widget .widget-title {

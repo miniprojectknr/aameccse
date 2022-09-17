@@ -108,7 +108,7 @@
 $(window).scroll(function () {
     var window_top = $(window).scrollTop() + 1;
     if (window_top > 50) {
-      $('.navbar-sticky').addClass('menu_fixed animated fadeInDown');
+      $('.navbar-sticky').addClass('menu_fixed animated fadeInDown menu-color');
     } else {
       $('.navbar-sticky').removeClass('menu_fixed animated fadeInDown');
     }
