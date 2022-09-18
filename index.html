@@ -45,6 +45,8 @@
     />
 
     <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="timer.js">
+    <link rel="stylesheet" href="assets/css/timer.css"/>
     <link rel="stylesheet" href="assets/css/woocomerce.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/animate.css"/>
@@ -132,7 +134,7 @@
           <div class="d-flex align-items-center justify-content-between">
             <div class="site-logo">
               <a href="index.html">
-                <img src="assets/images/logo.png" alt="" class="img-fluid" />
+                <img src="assets/images/logo.png" height="200" width="100" alt="" style="height:auto;" />
               </a>
             </div>
 
@@ -140,7 +142,7 @@
               <a href="#" class="nav-toggler"><i class="fal fa-bars"></i></a>
             </div>
              <nav class="site-navbar ms-auto">
-              <ul class="primary-menu">
+              <!-- <ul class="primary-menu">
                 <li class="current">
                   <a href="index.html" style="color:whitesmoke" >Home</a>
                 </li>
@@ -149,7 +151,7 @@
                 <li >
                   <a href="contact.html" style="color:whitesmoke">Contact</a>
                 </li>
-              </ul>
+              </ul> -->
 
               <a href="#" class="nav-close"><i class="fal fa-times"></i></a>
             </nav>
@@ -162,26 +164,67 @@
     <section class="banner banner-style-1">
       <div class="container">
         <div class="row align-items-center" >
-          
-
+        
           <div class="col-md-12 col-xl-6 col-lg-6">
             <div class="banner-img-round mt-5 mt-lg-0">
-              <img src="assets/images/icon/ks-logo.svg" alt="cse-building" class="img-fluid"  />
+              <img src="assets/images/icon/ks-logo.svg" alt="cse-ks-logo" class="img-fluid"  />
             </div>
           </div>
           <div class="col-md-12 col-xl-6 col-lg-6">
             <div class="banner-content heading-color-white">
-              <h1 style="font: 800 40px;
+              <!-- Style for Boder Font
+                style="font: 800 40px;
               -webkit-text-fill-color: transparent;
-              -webkit-text-stroke: 2px;">KSHATRIYAH' 22</h1>
+              -webkit-text-stroke: 2px;"
+               -->
+              <h1 style="color:#E1DBEC;">KSHATRIYAH' 22</h1>
               <p class="heading-color-white">A National Level Technical Symposium</p>
               <p class="heading-color-white">
                 Kshatriyah is a much awaited technical festival which is
                 tailor made to help future professionals to enhance their
-                technical and interpersonal skills.
+                technical and interpersonal skills.<br><br>
               </p>
             </div>
           </div>
+          
+          <div id="clockdiv">
+            <div>
+              <span class="days" id="day"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours" id="hour"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes" id="minute"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds" id="second"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+            </div>
+            
+            <p id="demo"></p>
+
+
+          <!-- <div id="timer">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 timer-card">
+              <div id="day" class="heading-color-yellow"></div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 timer-card">
+              <div id="hour" class="heading-color-yellow"></div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 timer-card">
+              <div id="min" class="heading-color-yellow"></div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xl-6 col-lg-6 timer-card">
+              <div id="sec" class="heading-color-yellow"></div>
+            </div>
+          </div>
+        </div> -->
         </div>
         <!-- / .row -->
       </div>
@@ -207,7 +250,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div >
-            <h4 class="heading-color-white">RULES</h4>
+            <h4 class="heading-color-white">General Intructions</h4>
             <p class="heading-color-white">More than one response may lead to disqualification.</p>
           </div>
           <div class="col-xl-6 col-lg-6">
@@ -237,9 +280,15 @@
                 <li >Each Team will get 7 minutes to present their paper</li>
                 </ul>
               </div>
-              <br>
-                  <p class="mb-30 heading-color-white">Register as soon as possible only limited slots are available.</p>
-              
+              <br><p class="heading-color-white">Register as soon as possible only limited slots are available.</p>
+              <!-- <ul class="heading-color-white">
+                <li>For any queries contact :</li>
+                <ul style="list-style-type:'#';" class="heading-color-white"> 
+                <li>Manoshree - 6385 946 082</li>
+                <li>Samyukthasri - 90804 78068.</li>
+              </ul>
+              </ul><br> -->
+                  <!--  Manoshree - 6385 946 082, </p> -->
               <a href="https://0a66h7y4s2g.typeform.com/to/ovRicSx7" target="_blank" class="btn btn-main rounded">Register</a>
             </div>
           </div>
@@ -517,6 +566,7 @@
                         <a href="https://0a66h7y4s2g.typeform.com/to/PqpKMl7s" target="_blank" class="btn btn-main rounded">Register</a>
                       </div>
                     </div>
+                    
                   </div>
                 </div>
               </section>
@@ -698,7 +748,68 @@
     <!-- 
     Essential Scripts
     =====================================-->
+    <!--Timer query-->
+    <!-- <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Oct 1, 2022 09:30:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+      
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+      
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var dayS = " DAYS";
+        var hourS = " HOURS";
+        var minS = " MINUTES";
+        var secS = " SECONDS";
+        // Display the result in the element with id="demo"
+        document.getElementById("day").innerHTML = '&nbsp&nbsp'+days +dayS;
+        document.getElementById("hour").innerHTML = '&nbsp&nbsp&nbsp'+hours + hourS;
+        document.getElementById("min").innerHTML = '&nbsp&nbsp&nbsp&nbsp&nbsp'+minutes + minS;
+        document.getElementById("sec").innerHTML = '&nbsp&nbsp&nbsp&nbsp&nbsp'+seconds + secS;
+      
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("day").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script> -->
 
+      <!--Timer js - II-->
+      <script>
+      var deadline = new Date("oct 1, 2022 09:30:00").getTime();
+
+      var x = setInterval(function() {
+
+      var now = new Date().getTime();
+      var t = deadline - now;
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("day").innerHTML =days ;
+      document.getElementById("hour").innerHTML =hours;
+      document.getElementById("minute").innerHTML = minutes;
+      document.getElementById("second").innerHTML =seconds;
+      if (t < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "TIME UP";
+          document.getElementById("day").innerHTML ='0';
+          document.getElementById("hour").innerHTML ='0';
+          document.getElementById("minute").innerHTML ='0' ;
+          document.getElementById("second").innerHTML = '0'; }
+      }, 1000);
+      </script>
     <!-- Main jQuery -->
     <script src="assets/vendors/jquery/jquery.js"></script>
     <!-- Bootstrap 5:0 -->

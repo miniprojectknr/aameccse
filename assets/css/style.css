@@ -4192,6 +4192,14 @@ Course Topics
   transition: all .4s ease 0s;
 }
 
+/* Div center */
+.div-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-
+}
+
 .tutori-course-curriculum ul.curriculum-sections .section-content .course-item.course-item-lp_lesson .section-item-link::before {
   content: "\f144";
 }
@@ -4455,6 +4463,10 @@ Course Review
 
 #course-reviews {
   margin-top: 40px;
+}
+
+.heading-color-yellow{
+  color:rgb(180, 180, 34);
 }
 
 /* ====================

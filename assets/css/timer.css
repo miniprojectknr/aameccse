@@ -1,0 +1,43 @@
+/* #timer{
+  width:700px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row .timer-card{
+  width: fit-content;
+  position: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: transparent;
+  border: 5px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  margin-left: 1em;
+} */
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+}
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+  margin-right: 1em;
+	background: #a16743;
+	display: inline-block;
+    border-radius:10%;
+}
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 7px;
+	background: #050908;
+	display: inline-block;
+}
+smalltext{
+	padding-top: 5px;
+	font-size: 12px;
+}
