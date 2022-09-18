@@ -337,7 +337,6 @@ select {
 select {
   word-wrap: normal;
 }
-
 [list]::-webkit-calendar-picker-indicator {
   display: none;
 }
@@ -568,7 +567,6 @@ progress {
   max-width: 100%;
   height: auto;
 }
-
 
 .img-thumbnail {
   padding: 0.25rem;
