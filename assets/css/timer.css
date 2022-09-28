@@ -41,3 +41,10 @@ smalltext{
 	padding-top: 5px;
 	font-size: 12px;
 }
+
+
+@media screen and (max-width:435px){
+		#clockdiv{
+			display: inline-table !important;
+		}
+}
